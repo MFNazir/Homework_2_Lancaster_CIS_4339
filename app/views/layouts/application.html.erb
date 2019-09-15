@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hogwarts Employee Address System</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1>Hogwarts Employee-Addresses Database</h1>
+      <p id="fancy">
+
+        <%= link_to 'Magical Employees' , employees_path %>
+        <%= '|' %>
+        <%= link_to 'Addresses' , addresses_path %>
+
+        <%= yield %>
+
+    </div>
+  </body>
+</html>
